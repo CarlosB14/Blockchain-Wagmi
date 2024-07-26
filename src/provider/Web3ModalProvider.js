@@ -22,10 +22,8 @@ const config = defaultWagmiConfig({
   chains,
   projectId,
   metadata,
-  // ...wagmiOptions // Optional - Override createConfig parameters
 });
 
-// 3. Create modal
 createWeb3Modal({
   wagmiConfig: config,
   projectId,
