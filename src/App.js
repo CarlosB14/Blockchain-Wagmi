@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/react";
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    // Aquí podrías inicializar cualquier cosa relacionada con web3modal si es necesario
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box bgColor={"gray.700"} display={"flex"} w="100vw" h="100vh" alignItems={"center"} justifyContent={"center"}>
+      <w3m-button />
+    </Box>
   );
 }
 
 export default App;
+
