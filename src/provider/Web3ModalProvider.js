@@ -8,7 +8,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 const queryClient = new QueryClient();
 
 // 1. Your WalletConnect Cloud project ID
-const projectId = 'bd2e8d864048b6b2d457d56841e25de4';
+const projectId = process.env.REACT_APP_PROJECT_ID;
 
 // 2. Create wagmiConfig
 const metadata = {
