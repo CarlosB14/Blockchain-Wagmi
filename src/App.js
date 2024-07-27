@@ -2,6 +2,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { useAccount, useBalance } from "wagmi";
 import HeaderComponent from "./components/HeaderComponent";
 import { useWeb3ModalState } from "@web3modal/wagmi/react";
+import SendTransactionComponent from "./components/SendTransactionComponent";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             Network: { selectedNetworkId } 
           </Text>
         </Flex>
+        <SendTransactionComponent />
       </>
       )}
     </Box>
